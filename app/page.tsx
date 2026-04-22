@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { FormEvent, useMemo, useState } from "react";
 
 export default function HomePage() {
@@ -67,7 +68,16 @@ export default function HomePage() {
     <main className="min-h-screen bg-white text-zinc-900">
       <header className="border-b border-zinc-200">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
-          <div className="text-xl font-semibold">Fuel Save Group</div>
+          <a href="/" className="flex items-center">
+  <Image
+    src="/logo.png"
+    alt="Fuel Save Group"
+    width={420}
+    height={120}
+    priority
+    className="h-auto w-[180px] sm:w-[230px]"
+  />
+</a>
 
           <nav className="hidden gap-8 text-sm md:flex">
             <a href="#how" className="hover:text-zinc-500">
